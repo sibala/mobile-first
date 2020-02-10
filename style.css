@@ -1,0 +1,39 @@
+header,
+section,
+aside,
+footer {
+	border: 1px solid #333;
+	margin: 10px;
+}
+
+header {
+	grid-area: header;
+}
+
+section {
+	grid-area: section;
+}
+
+aside {
+	grid-area: aside;
+}
+
+footer {
+	grid-area: footer;
+}
+
+.container {
+	margin: 20px auto;
+	border: 1px solid #333;
+	width: 90%;
+	display: grid;
+
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, minmax(200px, auto));
+	grid-template-areas: 
+		"header"
+		"section"
+		"aside"
+		"footer";
+}
+
